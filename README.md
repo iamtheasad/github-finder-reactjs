@@ -21,7 +21,7 @@
 
 ```
 
-# What we learn from this project
+# What I learned from this project
 
 ### Daisy UI
 
@@ -30,3 +30,25 @@
 ### A tag `rel=noreferrer` should use for external link
 
 ### `react-router-dom`
+
+### Getting user data from Github public API
+
+- If need any accessToken it should provide in fetch API's headers as object
+
+```
+ useEffect(() => {
+   getUsers();
+ }, []);
+
+ const getUsers = async () => {
+   const response = await fetch(`${process.env.REACT_APP_GITHUB_URL}/users`, {
+     headers: {
+       Authorization: `token ${process.env.REACT_APP_GITHUB_TOKEN}`,
+     },
+   });
+   const data = await response.json();
+   setUsers(data);
+   setLoading(false);
+ };
+
+```
