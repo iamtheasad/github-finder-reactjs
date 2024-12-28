@@ -55,7 +55,7 @@
 
 ### Context API
 
-- <h4>Create a Context Object</h4>
+<h4>Create a Context Object</h4>
 
 First, you need to create a context object using the createContext function from the 'react' library. This context object will hold the data that you want to share across your application.
 
@@ -70,7 +70,7 @@ export const MyContext = createContext("");
 
 In the above code, we're importing createContext from React and using it to create a new context object named "MyContext". Then, we are exporting the context object so that we can use it in other parts of our application.
 
-- <h4>Wrap Components with a Provider</h4>
+<h4>Wrap Components with a Provider</h4>
 
 Once you've created a context object, you need to wrap the components that need access to the shared data with a Provider component. The Provider component accepts a "value" prop that holds the shared data, and any component that is a child of the Provider component can access that shared data.
 
@@ -177,7 +177,7 @@ function App() {
 export default App;
 ```
 
-- <h4>Consume the Context</h4>
+<h4>Consume the Context</h4>
 
 ```
 import { useContext } from 'react';
