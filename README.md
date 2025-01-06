@@ -230,3 +230,8 @@ function UserResults() {
 export default UserResults;
 
 ```
+
+### `useReducer()` hook
+
+- `useReducer()` hook `useState()` are same
+- We can use multiple state action at once with `useReducer`
