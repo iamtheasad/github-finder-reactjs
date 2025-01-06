@@ -14,7 +14,7 @@ export const GithubProvider = ({ children }) => {
   const GITHUB_URL = process.env.REACT_APP_GITHUB_URL;
   const GITHUB_TOKEN = process.env.REACT_APP_GITHUB_TOKEN;
 
-  // Get Iniital Users For Testing Purpose
+  // Get Iniital Users For (Testing Purpose)
   const fetchUsers = async () => {
     setLoading();
 
