@@ -235,3 +235,4 @@ export default UserResults;
 
 - `useReducer()` hook `useState()` are same
 - We can use multiple state action at once with `useReducer`
+- Whenever `const [state, dispatch] = useReducer(reducer, initialState)` `dispatch()` function call type of that `action` if match with `reducer()` function `action.type`, `reducer()` function will udpate the value
