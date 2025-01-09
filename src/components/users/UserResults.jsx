@@ -6,10 +6,6 @@ import GithubContext from "../../context/github/GithubContext";
 function UserResults() {
   const { users, loading } = useContext(GithubContext);
 
-  // useEffect(() => {
-  //   searchUsers();
-  // }, []);
-
   if (!loading) {
     return (
       <div className="grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-8">

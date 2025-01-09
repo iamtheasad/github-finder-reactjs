@@ -21,6 +21,11 @@
 
 ```
 
+# How to run
+
+- `npm i`
+- `npm start`
+
 # What I learned from this project
 
 ### Daisy UI
@@ -239,4 +244,6 @@ export default UserResults;
 
 ### `new URLSearchParams()`
 
+- The`URLSearchParams()` constructor creates and returns a new URLSearchParams object.
 - The URLSearchParams interface defines utility methods to work with the query string of a URL.
+- Github search public API `https://api.github.com/search/users?q=iamtheasad`
