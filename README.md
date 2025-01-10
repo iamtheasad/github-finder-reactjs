@@ -247,3 +247,5 @@ export default UserResults;
 - The`URLSearchParams()` constructor creates and returns a new URLSearchParams object.
 - The URLSearchParams interface defines utility methods to work with the query string of a URL.
 - Github search public API `https://api.github.com/search/users?q=iamtheasad`
+
+### `ErrorBoundary` component need for remove random error from component

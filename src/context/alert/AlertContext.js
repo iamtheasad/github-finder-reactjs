@@ -1,5 +1,5 @@
 import { createContext, useReducer } from "react";
-import alertReducer from "./AlertReducer";
+import { alertReducer } from "./AlertReducer";
 
 const AlertContext = createContext();
 export default AlertContext;
@@ -16,7 +16,7 @@ export const AlertProvider = ({ children }) => {
   };
 
   return (
-    <AlertContext.Provider value={{ alert: state }}>
+    <AlertContext.Provider value={{ alert: state, setAlert }}>
       {children}
     </AlertContext.Provider>
   );
