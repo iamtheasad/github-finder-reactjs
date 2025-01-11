@@ -249,3 +249,5 @@ export default UserResults;
 - Github search public API `https://api.github.com/search/users?q=iamtheasad`
 
 ### `ErrorBoundary` component need for remove random error from component
+
+### `react-router-dom` for dynamic route we use `:login` e.x: `<Route path="/user/:login" element={<User />} />`
