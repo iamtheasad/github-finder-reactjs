@@ -251,3 +251,5 @@ export default UserResults;
 ### `ErrorBoundary` component need for remove random error from component
 
 ### `react-router-dom` for dynamic route we use `:login` e.x: `<Route path="/user/:login" element={<User />} />`
+
+### `useParams()` to get params from url
