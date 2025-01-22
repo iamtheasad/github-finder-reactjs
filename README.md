@@ -57,7 +57,7 @@
 
 ```
 
-## Context API
+## Context API Details Are Shown Below
 
 <h4>Create a Context Object </h4>
 
@@ -247,13 +247,21 @@ export default UserResults;
 - The URLSearchParams interface defines utility methods to work with the query string of a URL.
 - Github search public API `https://api.github.com/search/users?q=iamtheasad`
 
-## `ErrorBoundary` component need for remove random error from component
+## `ErrorBoundary`
 
-## `react-router-dom` for dynamic route we use `:login` e.x: `<Route path="/user/:login" element={<User />} />`
+- Component need for remove random error from component
 
-## `useParams()` to get params from url
+## `react-router-dom`
 
-## `Promise.all([])` make request together, it's just like `array` of request
+- For dynamic route we use `:login` e.x: `<Route path="/user/:login" element={<User />} />`
+
+## `useParams()`
+
+- To get params from url
+
+## `Promise.all([])`
+
+- Make request together, it's just like `array` of request
 
 ```
 
