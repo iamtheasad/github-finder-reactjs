@@ -25,17 +25,17 @@
 
 # What I learned from this project
 
-### Daisy UI
+## Daisy UI
 
-### Tailwind
+## Tailwind
 
-### A tag `rel=noreferrer`
+## A tag `rel=noreferrer`
 
 - Should use for external link
 
-### `react-router-dom`
+## `react-router-dom`
 
-### Getting user data from Github public API
+## Getting user data from Github public API
 
 - If need any accessToken it should provide in fetch API's headers as object
 
@@ -57,7 +57,7 @@
 
 ```
 
-### Context API
+## Context API
 
 <h4>Create a Context Object </h4>
 
@@ -235,25 +235,25 @@ export default UserResults;
 
 ```
 
-### `useReducer()` hook
+## `useReducer()` hook
 
 - `useReducer()` hook `useState()` are same
 - We can use multiple state action at once with `useReducer`
 - Whenever `const [state, dispatch] = useReducer(reducer, initialState)` `dispatch()` function call type of that `action` if match with `reducer()` function `action.type`, `reducer()` function will udpate the value
 
-### `new URLSearchParams()`
+## `new URLSearchParams()`
 
 - The`URLSearchParams()` constructor creates and returns a new URLSearchParams object.
 - The URLSearchParams interface defines utility methods to work with the query string of a URL.
 - Github search public API `https://api.github.com/search/users?q=iamtheasad`
 
-### `ErrorBoundary` component need for remove random error from component
+## `ErrorBoundary` component need for remove random error from component
 
-### `react-router-dom` for dynamic route we use `:login` e.x: `<Route path="/user/:login" element={<User />} />`
+## `react-router-dom` for dynamic route we use `:login` e.x: `<Route path="/user/:login" element={<User />} />`
 
-### `useParams()` to get params from url
+## `useParams()` to get params from url
 
-### `Promise.all([])` make request together, it's just like `array` of request
+## `Promise.all([])` make request together, it's just like `array` of request
 
 ```
 
