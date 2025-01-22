@@ -15,13 +15,13 @@ function User() {
     dispatch({ type: "SET_LOADING" });
 
     const getUserData = async () => {
-      const userData = await getUser(params.login);
+      const userData = await getUser(params?.login);
       dispatch({
         type: "GET_USER",
         payload: userData,
       });
 
-      const userRepoData = await getUserRepos(params.login);
+      const userRepoData = await getUserRepos(params?.login);
       dispatch({
         type: "GET_REPOS",
         payload: userRepoData,
@@ -29,7 +29,7 @@ function User() {
     };
 
     getUserData();
-  }, []);
+  }, [dispatch, params.login]);
 
   const {
     name,

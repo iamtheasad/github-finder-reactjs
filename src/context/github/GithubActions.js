@@ -12,11 +12,6 @@ export const searchUsers = async (text) => {
   });
   const { items } = await response.json();
   return items;
-
-  //   dispatch({
-  //     type: "GET_USERS",
-  //     payload: items,
-  //   });
 };
 
 // Get Single User
@@ -33,11 +28,6 @@ export const getUser = async (login) => {
     const data = await response.json();
 
     return data;
-
-    //   dispatch({
-    //     type: "GET_USER",
-    //     payload: data,
-    //   });
   }
 };
 
@@ -53,8 +43,4 @@ export const getUserRepos = async (login) => {
 
   const data = await response.json();
   return data;
-  // dispatch({
-  //   type: "GET_REPOS",
-  //   payload: data,
-  // });
 };
