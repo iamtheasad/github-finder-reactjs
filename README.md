@@ -18,12 +18,12 @@
 
 ```
 
-# How to run
+### How to run
 
 - `npm i`
 - `npm start`
 
-# What I learned from this project
+## What I learned from this project
 
 - Daisy UI
 
