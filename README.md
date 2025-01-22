@@ -16,9 +16,6 @@
  <!-- For Link -->
  [Create React App](https://github.com/facebook/create-react-app)
 
- <!-- Single Link Code Block -->
- `npm run build`
-
 ```
 
 # How to run
@@ -28,15 +25,35 @@
 
 # What I learned from this project
 
-### Daisy UI
+<h2>
 
-### Tailwind
+Daisy UI
 
-### A tag `rel=noreferrer` should use for external link
+</h2>
 
-### `react-router-dom`
+<h2>
 
-### Getting user data from Github public API
+Tailwind
+
+</h2>
+
+<h2>
+
+A tag `rel=noreferrer` should use for external link
+
+</h2>
+
+ <h2>
+
+`react-router-dom`
+
+</h2>
+
+<h2>
+
+Getting user data from Github public API
+
+</h2>
 
 - If need any accessToken it should provide in fetch API's headers as object
 
@@ -58,13 +75,17 @@
 
 ```
 
-### Context API
+<h2>
+
+Context API
+
+</h2>
 
 <h4>Create a Context Object</h4>
 
-First, you need to create a context object using the createContext function from the 'react' library. This context object will hold the data that you want to share across your application.
+- First, you need to create a context object using the createContext function from the 'react' library. This context object will hold the data that you want to share across your application.
 
-Create a new file named MyContext.js in the src folder and add the following code to create a context object:
+- Create a new file named MyContext.js in the src folder and add the following code to create a context object:
 
 ```
 import { createContext } from 'react';
@@ -73,15 +94,15 @@ export const MyContext = createContext("");
 
 ```
 
-In the above code, we're importing createContext from React and using it to create a new context object named "MyContext". Then, we are exporting the context object so that we can use it in other parts of our application.
+- In the above code, we're importing createContext from React and using it to create a new context object named "MyContext". Then, we are exporting the context object so that we can use it in other parts of our application.
 
 <h4>Wrap Components with a Provider</h4>
 
-Once you've created a context object, you need to wrap the components that need access to the shared data with a Provider component. The Provider component accepts a "value" prop that holds the shared data, and any component that is a child of the Provider component can access that shared data.
+- Once you've created a context object, you need to wrap the components that need access to the shared data with a Provider component. The Provider component accepts a "value" prop that holds the shared data, and any component that is a child of the Provider component can access that shared data.
 
-It's important to note that the Provider component should be wrapped around the top-level component in an application to ensure that all child components have access to the shared data.
+- It's important to note that the Provider component should be wrapped around the top-level component in an application to ensure that all child components have access to the shared data.
 
-Here's an example that demonstrates how to wrap components with a Provider in Context API:
+- Here's an example that demonstrates how to wrap components with a Provider in Context API:
 
 ```
 // Create a parent component that wraps child components with a Provider
@@ -236,20 +257,63 @@ export default UserResults;
 
 ```
 
-### `useReducer()` hook
+<h2>
+
+`useReducer()` hook
+
+</h2>
 
 - `useReducer()` hook `useState()` are same
 - We can use multiple state action at once with `useReducer`
 - Whenever `const [state, dispatch] = useReducer(reducer, initialState)` `dispatch()` function call type of that `action` if match with `reducer()` function `action.type`, `reducer()` function will udpate the value
 
-### `new URLSearchParams()`
+<h2>
+
+`new URLSearchParams()`
+
+</h2>
 
 - The`URLSearchParams()` constructor creates and returns a new URLSearchParams object.
 - The URLSearchParams interface defines utility methods to work with the query string of a URL.
 - Github search public API `https://api.github.com/search/users?q=iamtheasad`
 
-### `ErrorBoundary` component need for remove random error from component
+<h2>
 
-### `react-router-dom` for dynamic route we use `:login` e.x: `<Route path="/user/:login" element={<User />} />`
+`ErrorBoundary` component need for remove random error from component
 
-### `useParams()` to get params from url
+</h2>
+
+<h2>
+
+`react-router-dom` for dynamic route we use `:login` e.x: `<Route path="/user/:login" element={<User />} />`
+
+</h2>
+
+<h2>
+
+`useParams()` to get params from url
+
+</h2>
+
+<h2>
+
+`Promise.all([])` make request together, it's just like `array` of request
+
+</h2>
+
+```
+
+export const getUserAndRepos = async (login) => {
+  const params = new URLSearchParams({ sort: "created", per_page: 10 });
+
+  const [user, repos] = await Promise.all([
+    github.get(`/users/${login}`),
+    github.get(`/users/${login}/repos?${params}`),
+  ]);
+
+  return {
+    user: user?.data,
+    repos: repos?.data,
+  };
+};
+```

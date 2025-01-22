@@ -1,6 +1,6 @@
 import { FaEye, FaInfo, FaLink, FaStar, FaUtensils } from "react-icons/fa";
 
-function RepoItem({ repo }) {
+function RepoItem({ repo, index }) {
   const {
     name,
     description,
@@ -15,7 +15,10 @@ function RepoItem({ repo }) {
     <div className="mb-2 rounded-md card bg-base-200 hover:bg-base-300">
       <div className="card-body">
         <h3 className="mb-2 text-xl font-semibold">
-          <a href={html_url}>
+          <a href={html_url} className="flex gap-2 items-center">
+            <span className="w-6 h-6 p-1 border rounded-full bg-[#1882ff] text-white text-sm text-center flex justify-center items-center">
+              {index + 1}
+            </span>
             <FaLink className="inline mr-1" /> {name}
           </a>
         </h3>
