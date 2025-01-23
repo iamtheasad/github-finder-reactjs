@@ -27,10 +27,18 @@
 - `npm i`
 - `npm start`
 
-# About This project
+# About This Project
 
 - We can get github user details through search
 - Show all repository of specific user
+
+# Technology Used Here
+
+- `Reactjs`
+- `react-router-dom` for route
+- `axios` for API call
+- `daisyui` Tailwind css components installed as Tailwind css plugin
+- `Tailwind`
 
 # What I learned from this project
 
