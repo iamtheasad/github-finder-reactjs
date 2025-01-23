@@ -27,6 +27,11 @@
 - `npm i`
 - `npm start`
 
+# About This project
+
+- We can get github user details through search
+- Show all repository of specific user
+
 # What I learned from this project
 
 ## Daisy UI
