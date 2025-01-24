@@ -296,3 +296,11 @@ export const getUserAndRepos = async (login) => {
   };
 };
 ```
+
+## useRef hook
+
+- Always return an object
+- We can do all of the things as vanilla js
+- We can set value
+- We can set style
+- If value change it's don't re-render like setState
