@@ -9,13 +9,13 @@
 // import Alert from "./components/layout/Alert";
 // import User from "./components/pages/User";
 import UseRefExample1 from "./components/all-react-hooks/UseRefExample1";
-import UseRefExample2 from "./components/all-react-hooks/UseRefExample2";
+import UseRefExample3 from "./components/all-react-hooks/UseRefExample3";
 
 function App() {
   return (
     <div className="container mx-auto py-3 px-3">
       {/* <UseRefExample1 /> */}
-      <UseRefExample2 />
+      <UseRefExample3 />
     </div>
   );
 }
