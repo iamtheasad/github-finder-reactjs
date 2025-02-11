@@ -18,6 +18,7 @@ function Todo() {
         }, 3000);
       });
 
+    // It runs when component are unMounted
     return () => {
       isMounted.current = false;
     };

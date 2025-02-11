@@ -6,6 +6,7 @@ function UseRefExample3() {
 
   return (
     <div>
+      {/* From React 18 it won't show any error  */}
       {showTodo && <Todo />}
       <button
         className="btn button btn-success"
