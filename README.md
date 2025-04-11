@@ -40,7 +40,7 @@
 - `daisyui` Tailwind css components installed as Tailwind css plugin
 - `Tailwind`
 
-# What I learned from this project
+# Project Notes
 
 ## Daisy UI
 
